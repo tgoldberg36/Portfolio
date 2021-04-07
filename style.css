@@ -11,36 +11,29 @@ body {
   background: linear-gradient(to left top, #f2709c,#ff9472) fixed;
 }
 
-ul {
-  font-family: 'Poppins', sans-serif;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar{
   overflow: hidden;
-  background-color: rgb(112, 99, 99);
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-
-li {
+.navbar a {
   float: left;
-  border-right:1px solid #f2709c;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-li a:hover:not(.active) {
-  background-color: rgb(97, 55, 55);
+.navbar a:hover {
+  background: #ddd;
+  color: black;
 }
 
-.active {
-  background-color: #864745;
+.header{
+  margin-top: 50px;
+  padding: auto;
 }
