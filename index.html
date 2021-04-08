@@ -4,24 +4,35 @@
         <title>Taylor Goldberg's Portfolio</title>
         <meta charset="UTF-8" />
 	    <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="porfolio.js"></script>
         <meta content='width=device-width, initial-scale=1' name='viewport'/>
     </head>
 
     <body>
         <nav role='navigation'>
             <ul class="nav-main">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#home" onclick="animateBounce('#home')">HOME</a></li>
+                <li><a href="#about" onclick="animateBounce('#about')">ABOUT</a></li>
+                <li><a href="#projects" onclick="animateBounce('#projects')">PROJECTS</a></li>
+                <li><a href="#contact" onclick="animateBounce('#contact')">CONTACT</a></li>
                 <li><a href="./Resume.pdf" target="_blank">RESUME</a></li>
             </ul>
             </nav>
 
-        <div class="box" id="home">Home</div>
-        <div class="box" id="about">About</div>
-        <div class="box" id="projects">Projects</div>
-        <div class="box" id="contact">Contact</div>
+        <div class="box" id="home">
+            <h1 class="animate__animated animate__pulse">Hello, I'm Taylor Goldberg.</h1>
+        </div>
+        <div class="box" id="about">
+            <h1>About Me</h1>
+        </div>
+        <div class="box" id="projects">
+            <h1>Projects</h1>
+        </div>
+        <div class="box" id="contact">
+            <h1>Contact</h1>
+            <h5>Have questions or business propositions?</h2>
+        </div>
     </body>
 
 </html>

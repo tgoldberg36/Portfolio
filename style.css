@@ -53,6 +53,13 @@ a {
   padding:1rem ;
   transition:color 1s ease;
 }
+
+a:hover {
+  background-color: white;
+  border-bottom:2px solid rgb(0, 0, 0);
+  color:#000;
+}
+
 nav {
   display: block;
   background-color: black;
@@ -74,3 +81,4 @@ li.selected a{
   font-size:50px;
   text-align: center;
 }
+
