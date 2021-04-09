@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
 	    <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="porfolio.js"></script>
         <meta content='width=device-width, initial-scale=1' name='viewport'/>
     </head>
@@ -21,8 +22,16 @@
             </nav>
 
         <div class="box" id="home">
-            <h1 class="animate__animated animate__pulse">Hello, I'm Taylor Goldberg.</h1>
+            <div class="intro">
+                <h1>Hello, I'm Taylor Goldberg.</h1>
+                <p>I am currently looking for a software engineering position</p>
+            </div>
+            <p>Learn more</p>
+            <a href="#about" id="downArrow" onclick="animateBounce('#about')">
+                <i class="fas fa-angle-double-down" id="downArrow"></i>
+            </a>
         </div>
+
         <div class="box" id="about">
             <h1>About Me</h1>
         </div>
@@ -31,7 +40,7 @@
         </div>
         <div class="box" id="contact">
             <h1>Contact</h1>
-            <h5>Have questions or business propositions?</h2>
+            <p>Have questions or business propostitions?</p>
         </div>
     </body>
 

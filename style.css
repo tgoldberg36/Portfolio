@@ -9,9 +9,14 @@
   color:white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to left top, #e62f2f,#e2714e) fixed;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,118,45,1) 100%);
 }
 
 .top {
@@ -54,12 +59,6 @@ a {
   transition:color 1s ease;
 }
 
-a:hover {
-  background-color: white;
-  border-bottom:2px solid rgb(0, 0, 0);
-  color:#000;
-}
-
 nav {
   display: block;
   background-color: black;
@@ -76,9 +75,18 @@ li.selected a{
 .box {
   height:1000px;
   border-bottom:2px solid white;
-  padding-top: 50px;
+  padding-top: 60px;
   color:black;
-  font-size:50px;
+  font-size:30px;
   text-align: center;
 }
 
+h1 {
+  font-size: 50px;
+}
+
+.intro{
+  text-align: center;
+  margin-bottom: 25%;
+  margin-top: 2%;
+}
