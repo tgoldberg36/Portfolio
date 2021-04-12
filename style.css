@@ -67,6 +67,7 @@ nav {
   height:50px;
   position: fixed;
   font-size: 20px;
+  font-size: 1vw;
 }
 
 li.selected a{
@@ -75,11 +76,12 @@ li.selected a{
 
 .box {
   height:1000px;
-  height: 50vw;
+  height: 55vw;
   border-bottom:2px solid white;
   padding-top: 60px;
   color:black;
-  font-size:30px;
+  font-size: 24px;
+  font-size: 1.25vw;
   text-align: center;
 }
 
@@ -89,7 +91,12 @@ h1 {
 }
 
 p{
-  padding-bottom: 1rem;
+  padding-bottom: .5vw;
+}
+
+#home{
+  font-size: 24px;
+  font-size: 1.25vw;
 }
 
 #about{
