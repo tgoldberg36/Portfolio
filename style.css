@@ -79,7 +79,6 @@ li.selected a{
   height: 55vw;
   border-bottom:2px solid white;
   padding-top: 60px;
-  color:black;
   font-size: 24px;
   font-size: 1.25vw;
   text-align: center;
@@ -115,7 +114,7 @@ p{
 }
 
 
-img {
+.aboutImg {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -127,4 +126,48 @@ img {
   text-align: center;
   justify-content: center;
   
+}
+
+.fa-angle-double-up, .fa-angle-double-down{
+  font-size: 2vw;
+}
+
+.fa-angle-double-up:hover, .fa-angle-double-down:hover{
+  color: #000;
+}
+
+.fa-angle-double-up{
+  padding-top: 4vw;
+}
+
+.email{
+  margin: auto;
+  width: 50%;
+  margin-top: 5vw;
+  border-style: solid;
+  border-radius: 4vw;
+  justify-content: center;
+  color: white;
+}
+
+.email:hover .fa-envelope:before{
+  content: "\f2b6";
+  transition: 2.5s;
+  color: #000;
+  background-color: #fff;
+}
+
+.email:hover{
+  color: black;
+  background-color: #fff;
+}
+
+a:hover{
+  color: #000;
+  transition: 2.5s;
+}
+
+#skillbar{
+  width: 55vw;
+  height: auto;
 }
