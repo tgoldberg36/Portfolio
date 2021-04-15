@@ -1,0 +1,656 @@
+/*
+ * Class: CSC 343
+ *
+ * Project: PM7
+ * 
+ * Authors:
+ * 1.Reza Munoz-Asayesh
+ * 2.Taylor Goldberg
+ * 3.James Brechtel
+ * 
+ * FileName: PM5.css
+ * 
+ */
+
+@font-face {
+    font-family: chineseTakeAway;
+    src: url(chineseTakeAway.woff);
+}
+
+body {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 12pt;
+    background-image: url('background.jpg');
+}
+
+#welcomePage {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-image: url("scroll.jpg");
+    background-size: 100%;
+    float: none;
+}
+
+.language {
+    text-align: center;
+    align-self: auto;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    font-size: 14pt;
+    font-family: sans-serif;
+    width: 200px;
+    height: 50px
+}
+
+h1,
+h2 {
+    align-self: center;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.page {
+    vertical-align: center;
+    margin-left: 100px;
+    width: 1000px;
+    float: left;
+}
+
+.tab {
+    overflow: hidden;
+}
+
+.page {
+    overflow: hidden;
+    border-style: solid;
+}
+
+.tab button {
+    float: left;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    font-size: 14pt;
+    font-family: sans-serif;
+    width: 200px;
+    height: 50px
+}
+
+.tabcontent {
+    overflow-wrap: break-word;
+    width: 1000px;
+    outline-style: solid;
+    outline-color: black;
+}
+
+.menuItemContainer {
+    padding-left: 70px;
+    width: 1000px;
+    height: 800px;
+}
+
+#entreeButton:Hover,
+#customButton:Hover,
+#sidesButton:Hover,
+#dessertsButton:Hover,
+#drinksButton:Hover {
+    background-color: white;
+}
+
+.tablinks {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+#entree,
+#entreeButton {
+    background-color: #f8be20;
+    color: black;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#entree {
+    background-image: url("textureCurry.png");
+    background-size: cover;
+}
+
+#custom,
+#customButton {
+    background-color: #f8a220;
+    color: black;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#custom {
+    background-image: url("customTexture.png");
+    background-size: contain;
+}
+
+#sides,
+#sidesButton {
+    background-color: #DC6605;
+    color: black;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#sides {
+    background-image: url("textureSides.png");
+    background-size: cover;
+}
+
+#desserts,
+#dessertsButton {
+    background-color: #b36200;
+    color: black;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#desserts {
+    background-image: url("textureDesserts.png");
+    font-family: Impact, Charcoal, sans-serif;
+    background-size: cover;
+}
+
+#drinks,
+#drinksButton {
+    background-color: firebrick;
+    color: black;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#drinks {
+    background-image: url("firebrickTexture.png");
+    background-size: cover;
+}
+
+#entreeButton,
+#customButton,
+#sidesButton,
+#dessertsButton,
+#drinksButton {
+    font-family: chineseTakeAway;
+}
+
+.backbutton {
+    background-color: black;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 4px;
+    border-radius: 8px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.backbutton:hover {
+    background-color: orange;
+}
+
+#checkoutCart {
+    float: left;
+    font-size: 20px;
+    width: 400px;
+    height: 850px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 8px;
+}
+
+#menu {
+    float: left;
+    border-right: none;
+    border-radius: 8px;
+}
+
+#goToMainMenu {
+    box-shadow: none;
+    padding: 20px;
+    float: left;
+    margin-right: 40px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: black;
+    /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: chineseTakeAway;
+}
+
+#goToMainMenu:Hover {
+    background-color: orange;
+}
+
+#goToCheckoutPage {
+    border-radius: 8px;
+    box-shadow: none;
+    margin-left: 140px;
+    font-size: 16px;
+    padding: 20px;
+    font-family: chineseTakeAway;
+}
+
+#goToCheckoutPage:Hover {
+    background-color: orange;
+}
+
+#goToOrderNumberPage {
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 800px;
+    margin-bottom: 10px;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+#goToOrderNumberPage:Hover {
+    background-color: orange;
+}
+
+.setPayment {
+    border: 0;
+    font-size: 25px;
+    padding: 40px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    box-shadow: 0 9px #323232;
+    outline: none;
+}
+
+.setPayment:Hover {
+    background-color: orange;
+}
+
+.setPaymentCard,
+#setPaymentCard:focus {
+    background-color: orange;
+    transform: translateY(4px);
+    box-shadow: 0 5px black;
+}
+
+.setPaymentCash,
+#setPaymentCash:focus {
+    background-color: orange;
+    transform: translateY(4px);
+    box-shadow: 0 5px black;
+}
+
+#exit {
+    font-family: chineseTakeAway;
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 140px;
+    margin-left: 480px;
+}
+
+#exit:Hover {
+    background-color: orange;
+}
+
+#checkoutTitle {
+    font-family: chineseTakeAway;
+    padding-left: 90px;
+    padding-top: 20px;
+    font-size: 30px;
+    margin-top: 0px;
+    outline-style: solid;
+    background-color: #fffdd0;
+    height: 46px;
+    border-radius: 8px;
+}
+
+#checkoutPage {
+    background-image: url("fish.jpg");
+    background-size: 100% 100%;
+    background-color: #fffdd0;
+    font-size: 22px;
+}
+
+#paymentOptions {
+    font-family: chineseTakeAway;
+    float: left;
+    margin-left: 340px;
+}
+
+#bottomCheckoutPage {
+    margin-top: 30px;
+    outline-style: solid;
+}
+
+#finalOrderList {
+    overflow: auto;
+    width: 900px;
+    height: 400px;
+    margin-left: 40px;
+}
+
+#finalCheckoutTotal {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 400px;
+}
+
+.listItem {
+    /* perhaps change these colors to match theme, if do change JS code too and name of CSS*/
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.listWhite {
+    /* perhaps change these colors to match theme, if do change JS code too and name of CSS*/
+    background-color: white;
+}
+
+.listGray {
+    background-color: lightgray;
+}
+
+.listGreen {
+    color: black;
+    background-color: #f3f0e6;
+}
+
+.listBrown {
+    color: black;
+    background-color: #e6d5ac;
+}
+
+#orderNumberPage {
+    color: black;
+    border: 0;
+    background-image: url("customTexture.png");
+    height: 600px;
+    width: 1000px;
+}
+
+#orderList {
+    margin-top: 40px;
+    overflow: auto;
+    width: 400px;
+    height: 650px;
+}
+
+#checkoutTotal {
+    background-color: #fffdd0;
+    font-size: x-large;
+}
+
+.menuItem {
+    text-align: center;
+    width: 210px;
+    padding: 10px;
+    margin: 20px;
+    border-style: solid;
+    display: inline-block;
+    border-width: 3px;
+    border-radius: 8px;
+    background-color: #fffdd0
+}
+
+.foodPic {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.infoPic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.menuButton {
+    width: 80px;
+    font-family: chineseTakeAway;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+.infoButton,
+.addButton {
+    font-family: Charcoal, sans-serif;
+    background-color: white;
+    box-shadow: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.infoButton:hover,
+.addButton:hover {
+    background-color: #e7e7e7;
+}
+
+.orderItem {
+    padding: 0;
+    margin: 0;
+}
+
+.customMenu {
+    font-family: chineseTakeAway;
+    display: flex;
+}
+
+.customTabs {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.customDirections {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 22px;
+}
+
+.customOrderItemInCheckoutCart {
+    margin-right: 10px;
+}
+
+.customTabButton {
+    box-shadow: none;
+    border-radius: 8px;
+    font-weight: 50pt;
+    text-align: center;
+    margin: 10px;
+    padding: 53px;
+    width: 225px;
+    height: 50px;
+    font-size: 18px;
+    outline: none;
+    background-color: white;
+    border-style: groove;
+    font-family: chineseTakeAway;
+}
+
+.customTabButton:hover,
+.customTabButton:focus {
+    background-color: orange;
+}
+
+.customItem {
+    background-color: #fffdd0;
+    text-align: center;
+    width: 175px;
+    padding: 10px;
+    margin: 20px;
+    border-style: groove;
+    display: inline-block;
+    border-color: black;
+    border-radius: 8px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.customCost {
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 100px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+    padding: 20px;
+    background-color: #fffdd0;
+    border-radius: 8px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#customOrderButton {
+    border-radius: 8px;
+    width: 170px;
+    height: 50px;
+    padding: 2px;
+    margin: 5px;
+    border-style: groove;
+    text-align: center;
+    box-shadow: none;
+    font-family: chineseTakeAway;
+}
+
+#customOrderButton:Hover {
+    background-color: lightblue;
+}
+
+.menuButton:hover,
+.infoButton:hover {
+    background-color: lightblue;
+}
+
+.customPic {
+    border-radius: 8px;
+    width: 150px;
+    height: 100px;
+}
+
+.customCart {
+    background-image: url("customTexture.png");
+    background-size: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+#customList {
+    overflow: auto;
+    height: 200px;
+    width: 500px;
+    margin: 10px;
+    border-width: 1px;
+}
+
+.cartHead {
+    font-family: chineseTakeAway;
+    background-color: #fffdd0;
+}
+
+.tigerButt {
+    width: 250px;
+    height: 225px;
+}
+
+.customListOut {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal {
+    background-image: url("scroll.jpg");
+    background-size: 100% 100%;
+    display: none;
+    position: fixed;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    font-family: Charcoal, sans-serif;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Impact, Charcoal, sans-serif;
+    color: red;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#paymentConfirmedTitle {
+    margin-top: 50px;
+    font-size: 50px;
+    color: black;
+    font-family: chineseTakeAway;
+}
+
+.paymentConfirmedContent {
+    background-image: url("endTwo.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.welcomeContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 50px;
+    background-color: #fff5d0;
+}

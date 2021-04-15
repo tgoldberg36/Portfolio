@@ -1,0 +1,917 @@
+<!--
+/*
+ * Class: CSC 343
+ *
+ * Project: PM7
+ * 
+ * Authors:
+ * 1.Reza Munoz-Asayesh
+ * 2.Taylor Goldberg
+ * 3.James Brechtel
+ * 
+ * FileName: index.html
+ * 
+ */
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="PM5.css" />
+    <script src="PM5.js" type="text/javascript"></script>
+    <title> Noodle boys - PM5 </title>
+</head>
+
+<body>
+    <!--div for the welcome page-->
+    <div class="page" id="welcomePage">
+        <img class="titlePic" src="welcome.png" alt="welcome">
+        <div class="welcomeContent">
+            <button class="next" id="goToMainMenu">START</button>
+        </div>
+    </div>
+
+    <!--div for the mainmenu page-->
+    <div id="mainMenuPage">
+        <!--div for menu part-->
+        <div class="page" id="menu">
+            <div class="tab">
+                <button class="tablinks" id="entreeButton">Entree</button>
+
+                <button class="tablinks" id="customButton">Custom</button>
+
+                <button class="tablinks" id="sidesButton">Sides</button>
+
+                <button class="tablinks" id="dessertsButton">Desserts</button>
+
+                <button class="tablinks" id="drinksButton">Drinks</button>
+            </div>
+
+            <div class="tabcontent" id="entree">
+                <!--entree item, code to show you how to insert items into the payment cycle -->
+                <div class="menuItemContainer">
+                    <div class="menuItem">
+                        <img class="foodPic" src="taiwanBeef.jpg" alt="TaiwanBeef"> Taiwan Beef : $10.00
+                        <br>
+                        <button class="menuButton infoButton" id="tbInfo">Food Info</button>
+                        <button class="menuButton addButton" id="taiwanBeef">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="misoRamen.jpg" alt="MisoRamen"> Miso Ramen : $9.00
+                        <br>
+                        <button class="menuButton infoButton" id="mrInfo">Food Info</button>
+                        <button class="menuButton addButton" id="misoRamen">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="beefHotpot.jpg" alt="BeefHotpot"> Beef Hotpot : $12.00
+                        <br>
+                        <button class="menuButton infoButton" id="bhInfo">Food Info</button>
+                        <button class="menuButton addButton" id="beefHotpot">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="guilinSpicy.jpg" alt="GuilinSpicy"> Guilin Spicy : $10.00
+                        <br>
+                        <button class="menuButton infoButton" id="gsInfo">Food Info</button>
+                        <button class="menuButton addButton" id="guilinSpicy">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="hakataRamen.jpg" alt="HakataRamen"> Hakata Ramen : $9.00
+                        <br>
+                        <button class="menuButton infoButton" id="hrInfo">Food Info</button>
+                        <button class="menuButton addButton" id="hakataRamen">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="porkHotpot.jpg" alt="PorkHotpot"> Pork Hotpot : $10.00
+                        <br>
+                        <button class="menuButton infoButton" id="phInfo">Food Info</button>
+                        <button class="menuButton addButton" id="porkHotpot">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="chowMein.jpg" alt="ChowMein"> Chow Mein : $10.00
+                        <br>
+                        <button class="menuButton infoButton" id="cmInfo">Food Info</button>
+                        <button class="menuButton addButton" id="chowMein">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="udonRamen.jpg" alt="UdonRamen"> Udon Ramen : $9.00
+                        <br>
+                        <button class="menuButton infoButton" id="urInfo">Food Info</button>
+                        <button class="menuButton addButton" id="udonRamen">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="seafoodHotpot.jpg" alt="seafoodHotpot"> Seafood Hotpot : $14.00
+                        <br>
+                        <button class="menuButton infoButton" id="sfInfo">Food Info</button>
+                        <button class="menuButton addButton" id="seafoodHotpot">Add Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabcontent" id="custom">
+                <div class="customMenu">
+                    <div class="customTabs">
+                        <button class="customTabButton" id='broth'>broth</button>
+                        <button class="customTabButton" id='noodles'>noodles</button>
+                        <button class="customTabButton" id='protein'>protein</button>
+                        <button class="customTabButton" id='vegetables'>vegetables</button>
+                    </div>
+
+                    <div class='customTab' id='brothTab'>
+                        <p class="customDirections">Please select 1 Broth Type</p>
+                        <div class="customItem">
+                            <img class="customPic" src="guilinBroth.png" alt="Guilin Broth"> Guilin Broth
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="guilinBroth">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="chickenbroth.jpg" alt="Chicken Broth"> Chicken Broth
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="chickenBroth">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="beefBroth.jpg" alt="Beef Broth"> Beef Broth
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="beefBroth">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="tonkotsuBroth.jpg" alt="Tonkotsu Broth"> Tonkotsu Broth
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="tonkotsuBroth">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="misoBroth.jpeg" alt="Miso Broth"> Miso Broth
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="misoBroth">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="soyBroth.jpg" alt="Soy Broth"> Soy Broth
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="soyBroth">Add Item</button>
+                        </div>
+                    </div>
+
+                    <div class="customTab" id='noodlesTab'>
+                        <p class="customDirections">Please select 1 Noodle Type</p>
+                        <div class="customItem">
+                            <img class="customPic" src="glassNoodle.jpg" alt="glass noodle"> Glass Noodles
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="glassNoodle">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="wheatNoodle.jpg" alt="Wheat Noodle"> Wheat Noodles
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="wheatNoodle">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="udonNoodle.jpg" alt="udonNoodle"> Udon Noodles
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="udonNoodle">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="riceNoodle.jpg" alt="Rice Noodles"> Rice Noodles
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="riceNoodle">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="sobaNoodle.jpg" alt="sobaNoodle"> Soba Noodles
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="sobaNoodle">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="eggNoodle.jpg" alt="eggNoodle"> Egg Noodles
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="eggNoodle">Add Item</button>
+                        </div>
+                    </div>
+
+                    <div class="customTab" id='proteinTab'>
+                        <p class="customDirections">Please select 1-2 types of Protein, you may also get 2x same protein</p>
+
+                        <div class="customItem">
+                            <img class="customPic" src="beef.jpg" alt="beef"> Beef
+                            <br>
+                            <button class="menuButton infoButton customItemButton" id="beef">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="pork.jpg" alt="pork"> Pork <br>
+                            <button class="menuButton infoButton customItemButton" id="pork">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="chicken.jpg" alt="chicken"> Chicken <br>
+                            <button class="menuButton infoButton customItemButton" id="chicken">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="shrimp.jpg" alt="shrimp"> Shrimp <br>
+                            <button class="menuButton infoButton customItemButton" id="shrimp">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="Talapia.jpg" alt="Talapia"> Talapia <br>
+                            <button class="menuButton infoButton customItemButton" id="talapia">Add Item</button>
+                        </div>
+                        <div class="customItem">
+                            <img class="customPic" src="tofu.jpg" alt="tofu"> Tofu <br>
+                            <button class="menuButton infoButton customItemButton" id="tofu">Add Item</button>
+                        </div>
+                    </div>
+
+                    <div class="customTab" id='vegetablesTab'>
+                        <p class="customDirections">Please select up to 4 different Vegetables, or upto 4 orders of same type</p>
+                        <div class="customItem">
+                            <img class="customPic" src="beanSprouts.jpg" alt="beanSprouts"> Bean Sprouts <br>
+                            <button class="menuButton infoButton customItemButton" id="beanSprouts">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="basil.jpg" alt="basil"> Basil <br>
+                            <button class="menuButton infoButton customItemButton" id="basil">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="mushroom.jpg" alt="mushroom"> Mushroom <br>
+                            <button class="menuButton infoButton customItemButton" id="mushroom">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="bokChoy.jpg" alt="bokChoy"> Baby Bok Choy <br>
+                            <button class="menuButton infoButton customItemButton" id="babyBokChoy">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="cabbage.jpg" alt="cabbage"> Cabbage <br>
+                            <button class="menuButton infoButton customItemButton" id="cabbage">Add Item</button>
+                        </div>
+
+                        <div class="customItem">
+                            <img class="customPic" src="carrots.jpg" alt="carrots"> Carrots <br>
+                            <button class="menuButton infoButton customItemButton" id="carrot">Add Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customCart">
+                    <div class="cartHead">
+                        <h1> Chosen Ingredients </h1>
+                    </div>
+                    <div class="customListOut">
+                        <img class="tigerButt" src="tigerButt.png" />
+
+                        <div id="customList">
+
+                        </div>
+
+                        <div class="customCost">
+                            <p> Cost: $13.00 </p>
+                            <button class="orderItem" id="customOrderButton">Finish Custom</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tabcontent" id="sides">
+                <div class="menuItemContainer">
+                    <div class="menuItem">
+                        <img class="foodPic" src="steamedDumplings.png" alt="steamedDumplings"> Steamed Dumplings[6] : $5.00
+                        <br>
+                        <button class="menuButton infoButton" id="sdInfo">Food Info</button>
+                        <button class="menuButton addButton" id="steamedDumplings">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="panFriedDumplings.jpg" alt="MisoRamen"> Pan Fried Dumplings[8] : $7.00
+                        <br>
+                        <button class="menuButton infoButton" id="pfInfo">Food Info</button>
+                        <button class="menuButton addButton" id="panFriedDumplings">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="veggieEggRolls.jpg" alt="veggieEggRolls"> Veggie Egg Rolls[2] : $3.00
+                        <br>
+                        <button class="menuButton infoButton" id="verInfo">Food Info</button>
+                        <button class="menuButton addButton" id="veggieEggRolls">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="chaoshouDumplings.jpg" alt="chaoshouDumplings"> Chasohou Dumplings[8] : $7.00
+                        <br>
+                        <button class="menuButton infoButton" id="cdInfo">Food Info</button>
+                        <button class="menuButton addButton" id="chaoshouDumplings">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="bokChoy.jpg" alt="bokChoy"> Bok Choy : $3.00
+                        <br>
+                        <button class="menuButton infoButton" id="bcInfo">Food Info</button>
+                        <button class="menuButton addButton" id="bokChoy">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="crabPuffs.jpg" alt="crabPuffs"> Crab Puff[6]: $5.00
+                        <br>
+                        <button class="menuButton infoButton" id="cpInfo">Food Info</button>
+                        <button class="menuButton addButton" id="crabPuffs">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="saltPepperFriedWings.jpg" alt="saltPepperFriedWings"> Salt and Pepper Fried Wings[6]: $7.00
+                        <br>
+                        <button class="menuButton infoButton" id="spfwInfo">Food Info</button>
+                        <button class="menuButton addButton" id="saltPepperFriedWings">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="kimchee.jpg" alt="kimchee"> Kimchee : $3.00
+                        <br>
+                        <button class="menuButton infoButton" id="kInfo">Food Info</button>
+                        <button class="menuButton addButton" id="kimchee">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="garlicCucumber.jpg" alt="garlicCucumber"> Garlic Cucumber: $3.00
+                        <br>
+                        <button class="menuButton infoButton" id="gcInfo">Food Info</button>
+                        <button class="menuButton addButton" id="garlicCucumber">Add Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabcontent" id="desserts">
+                <!--entree item, code to show you how to insert items into the payment cycle -->
+                <div class="menuItemContainer">
+                    <div class="menuItem">
+                        <img class="foodPic" src="cremebrulee.jpg" alt="cremebrulee">Creme Brulee : $5.00
+                        <br>
+                        <button class="menuButton infoButton" id="cremeInfo">Food Info</button>
+                        <button class="menuButton addButton" id="cremebrulee">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="eggTarts.jpg" alt="eggTarts">Egg Tarts : $5.00
+                        <br>
+                        <button class="menuButton infoButton" id="etInfo">Food Info</button>
+                        <button class="menuButton addButton" id="eggTarts">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="friedIceCream.jpg" alt="friedIceCream"> Fried Ice Cream: $4.00
+                        <br>
+                        <button class="menuButton infoButton" id="fiInfo">Food Info</button>
+                        <button class="menuButton addButton" id="friedIceCream">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="fruitGyoza.jpg" alt="fruitGyoza"> Fruit Gyoza : $4.00
+                        <br>
+                        <button class="menuButton infoButton" id="fgInfo">Food Info</button>
+                        <button class="menuButton addButton" id="fruitGyoza">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="sesameBalls.jpg" alt="sesameBalls"> Sesame Balls : $3.00
+                        <br>
+                        <button class="menuButton infoButton" id="sbInfo">Food Info</button>
+                        <button class="menuButton addButton" id="sesameBalls">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="stickyMangoRice.jpg" alt="stickyMangoRice"> Sticky Mango Rice : $7.00
+                        <br>
+                        <button class="menuButton infoButton" id="smInfo">Food Info</button>
+                        <button class="menuButton addButton" id="stickyMangoRice">Add Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabcontent" id="drinks">
+                <div class="menuItemContainer">
+                    <div class="menuItem">
+                        <img class="foodPic" src="cannedSoda.jpg" alt="cannedSoda"> Canned Soda : $2.00
+                        <br>
+                        <button class="menuButton infoButton" id="csInfo">Food Info</button>
+                        <button class="menuButton addButton" id="cannedSoda">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="cannedBeer.jpg" alt="cannedBeer"> Canned Beer : $3.00
+                        <br>
+                        <button class="menuButton infoButton" id="cbInfo">Food Info</button>
+                        <button class="menuButton addButton" id="cannedBeer">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="domesticDraft.jpg" alt="domesticDraft"> Domestic Draft : $4.00
+                        <br>
+                        <button class="menuButton infoButton" id="ddInfo">Food Info</button>
+                        <button class="menuButton addButton" id="domesticDraft">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="marbleSoda.jpg" alt="marbleSoda"> Marble Soda : $4.00
+                        <br>
+                        <button class="menuButton infoButton" id="msInfo">Food Info</button>
+                        <button class="menuButton addButton" id="marbleSoda">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="mexicanSoda.jpg" alt="mexicanSoda"> Mexican Soda : $3.00
+                        <br>
+                        <button class="menuButton infoButton" id="mexInfo">Food Info</button>
+                        <button class="menuButton addButton" id="mexicanSoda">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="icedTea.jpeg" alt="icedTea"> Iced Tea: $2.00
+                        <br>
+                        <button class="menuButton infoButton" id="itInfo">Food Info</button>
+                        <button class="menuButton addButton" id="icedTea">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="koolAidBursts.jpg" alt="koolAidBursts"> KoolAid Bursts: $2.00
+                        <br>
+                        <button class="menuButton infoButton" id="kabInfo">Food Info</button>
+                        <button class="menuButton addButton" id="koolAidBursts">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="littleHugs.jpg" alt="littleHugs"> Little Hugs : $2.00
+                        <br>
+                        <button class="menuButton infoButton" id="lhInfo">Food Info</button>
+                        <button class="menuButton addButton" id="littleHugs">Add Item</button>
+                    </div>
+
+                    <div class="menuItem">
+                        <img class="foodPic" src="water.jpg" alt="water"> Water: $1.00
+                        <br>
+                        <button class="menuButton infoButton" id="wInfo">Food Info</button>
+                        <button class="menuButton addButton" id="water">Add Item</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- div for the checkout cart, part of main menu-->
+        <div id="checkoutCart">
+            <h3 id="checkoutTitle">Checkout Cart</h3>
+            <div id="orderList"> </div>
+            <div id="bottomCheckoutCart">
+                <div id="checkoutTotal">
+                    Total: $<span id="totalCost"></span>
+                </div>
+                <button id="goToCheckoutPage">Check Out</button>
+            </div>
+        </div>
+    </div>
+
+    <!--div for checkout page-->
+    <div class="page" id="checkoutPage">
+        <h1>Checkout</h1>
+        <button class="backbutton" id="backToMainMenu">⟸</button>
+        <div id="finalOrderList"></div>
+
+        <div id="bottomCheckoutPage">
+            <div id="finalCheckoutTotal">
+                Total: $<span id="finalTotalCost"></span>
+            </div>
+            <p>Please Select Payment Type</p>
+            <div id="paymentOptions">
+                <button class="setPayment" id="setPaymentCard">Credit</button>
+                <button class="setPayment" id="setPaymentCash">Debit</button>
+            </div>
+            <button class="next" id="goToOrderNumberPage">Finish Payment</button>
+
+        </div>
+
+
+    </div>
+
+    <!--div for the orderNumberPage-->
+    <div class="page" id="orderNumberPage">
+        <div class="paymentConfirmedTitleSection">
+            <h1 id="paymentConfirmedTitle">Payment Confirmed</h1>
+            <h1>Thank you for ordering with Fat Tiger Noodle <br> YOUR ORDER NUMBER IS #0000</h1>
+        </div>
+        <div class="paymentConfirmedContent">
+            <button class="next" id="exit">Finish</button>
+        </div>
+    </div>
+
+
+    <!-- divs for all the entree food infomation button -->
+    <div class="modal" id="tbModal">
+        <div class="modal-content">
+            <span class="close" id="tbClose">&times;</span>
+            <h1>Taiwan Beef</h1>
+            <img class="infoPic" src="taiwanBeef.jpg" alt="TaiwanBeef">
+            <p> House made wheat noodle in beef broth, topped with beef brisket, bok choy, pickled green, green onion, and cilantro </p>
+            <h2> Macro Nutrients</h2>
+            <p>530 Cal</p>
+            <p>Carbs: 35g - Fat: 30g - Protein: 30g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="mrModal">
+        <div class="modal-content">
+            <span class="close" id="mrClose">&times;</span>
+            <h1>Miso Ramen</h1>
+            <img class="infoPic" src="misoRamen.jpg" alt="MisoRamen">
+            <p>Miso ramen is a Japanese noodle soup with a broth seasoned with miso and served with a variety of vegetables and garnishes. The miso broth recipe for this dish is made from the chicken base, ground pork, and vegetables</p>
+            <h2> Macro Nutrients</h2>
+            <p>679 Cal</p>
+            <p>Carbs: 69g - Fat: 28g - Protein: 39g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="gsModal">
+        <div class="modal-content">
+            <span class="close" id="gsClose">&times;</span>
+            <h1>Guilin Spicy</h1>
+            <img class="infoPic" src="guilinSpicy.jpg" alt="GuilinSpicy">
+            <p>Guilin rice noodle in spicy and sour chicken broth, topped with bok choy, spicy pickled green, bamboo, pickled green bean, roasted peanuts, green onion, and cilantro and bbq pork</p>
+            <h2> Macro Nutrients</h2>
+            <p>480 Cal</p>
+            <p>Carbs: 79g - Fat: 14g - Protein: 9g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="bhModal">
+        <div class="modal-content">
+            <span class="close" id="bhClose">&times;</span>
+            <h1>Beef Hotpot</h1>
+            <img class="infoPic" src="beefHotpot.jpg" alt="BeefHotpot">
+            <p>This comforting stew teams beef with spinach, an efficient pairing because the iron in the beef enhances your body's ability to absorb the iron in the spinach. Served over plain Chinese noodles</p>
+            <h2> Macro Nutrients</h2>
+            <p>203 Cal</p>
+            <p>Carbs: 27g - Fat: 5g - Protein: 11g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="hrModal">
+        <div class="modal-content">
+            <span class="close" id="hrClose">&times;</span>
+            <h1>Hakata Ramen</h1>
+            <img class="infoPic" src="hakataRamen.jpg" alt="HakataRamen">
+            <p>Hakata-ramen is a hot noodle soup dish with creamy, white and rich broth that is cooked from pork backbones, head, and certain other ingredients such as egg and green onion.</p>
+            <h2> Macro Nutrients</h2>
+            <p>510 Cal</p>
+            <p>Carbs: 108g - Fat: 1g - Protein: 16g</p>
+
+        </div>
+    </div>
+
+    <div class="modal" id="phModal">
+        <div class="modal-content">
+            <span class="close" id="phClose">&times;</span>
+            <h1>Pork Hotpot</h1>
+            <img class="infoPic" src="porkHotpot.jpg" alt="PorkHotpot">
+            <p>The richly flavored broth seasoned with of anise, cinnamon and ginger. Pork shoulder becomes meltingly tender during the slow braise. Served over noodles with stir-fried napa cabbage.</p>
+            <h2> Macro Nutrients</h2>
+            <p>510 Cal</p>
+            <p>Carbs: 58g - Fat: 15g - Protein: 33g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="urModal">
+        <div class="modal-content">
+            <span class="close" id="urClose">&times;</span>
+            <h1>Udon Ramen</h1>
+            <img class="infoPic" src="udonRamen.jpg" alt="OdonRamen">
+            <p>Udon (饂飩, usually written as うどん) is a type of thick, wheat-flour noodle used frequently in Japanese cuisine. It is often served hot as a noodle soup in its simplest form, as kake udon, in a mildly flavoured broth called kakejiru, which is
+                made of dashi, soy sauce, and mirin.</p>
+            <h2> Macro Nutrients</h2>
+            <p>549 Cal</p>
+            <p>Carbs: 89g - Fat: 15g - Protein: 20g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="cmModal">
+        <div class="modal-content">
+            <span class="close" id="cmClose">&times;</span>
+            <h1>Chow Mien</h1>
+            <img class="infoPic" src="chowMein.jpg" alt="ChowMein">
+            <p>Cantonese style chow mein contains deep-fried crunchy golden egg noodles, green peppers, pea pods, bok choy, bamboo shoots, water chestnuts, shrimp, Chinese roast pork (char siu), chicken, and beef, and is served in a thick sauce</p>
+            <h2> Macro Nutrients</h2>
+            <p>128 Cal</p>
+            <p>Carbs: 19g - Fat: 4g - Protein: 3g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="sfModal">
+        <div class="modal-content">
+            <span class="close" id="sfClose">&times;</span>
+            <h1>Seafood Hotpot</h1>
+            <img class="infoPic" src="seafoodHotpot.jpg" alt="seafoodHotpot">
+            <p>Homemade fish stock made with seafood as the main protein. We added tamari sauce and sesame oil used for sauteing the seafood. It is a simple soup to make and we used fresh angel hair noodles as a substitute for the ramen noodles</p>
+            <h2> Macro Nutrients</h2>
+            <p>821 Cal</p>
+            <p>Carbs: 71g - Fat: 28g - Protein: 67g</p>
+        </div>
+    </div>
+
+    <!-- divs for all the side food infomation button 
+    /////////////////////////////////////////////////
+    -->
+    <div class="modal" id="sdModal">
+        <div class="modal-content">
+            <span class="close" id="sdClose">&times;</span>
+            <h1>Steamed Dumplings</h1>
+            <img class="infoPic" src="steamedDumplings.png" alt="steamedDumplings">
+            <p>These homemade dumplings are filled with beef, port, and vegetables that have been steamed.</p>
+            <h2> Macro Nutrients</h2>
+            <p>108 Cal</p>
+            <p>Carbs: 18g - Fat: 2g - Protein: 6g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="pfModal">
+        <div class="modal-content">
+            <span class="close" id="pfClose">&times;</span>
+            <h1>Pan Fried Dumpings</h1>
+            <img class="infoPic" src="panFriedDumplings.jpg" alt="MisoRamen">
+            <p>These homemade dumplings are filled with beef, port, and vegetables that are pan fried.</p>
+            <h2> Macro Nutrients</h2>
+            <p>108 Cal</p>
+            <p>Carbs: 18g - Fat: 2g - Protein: 6g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="verModal">
+        <div class="modal-content">
+            <span class="close" id="verClose">&times;</span>
+            <h1>Veggie Egg Rolls</h1>
+            <img class="infoPic" src="veggieEggRolls.jpg" alt="veggieEggRolls">
+            <p>These homemade vegetable egg rolls are stuffed full of cabbage, mushrooms, carrots, and more</p>
+            <h2> Macro Nutrients</h2>
+            <p>108 Cal</p>
+            <p>Carbs: 18g - Fat: 2g - Protein: 6g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="cdModal">
+        <div class="modal-content">
+            <span class="close" id="cdClose">&times;</span>
+            <h1>Chaoshou Dumplings</h1>
+            <img class="infoPic" src="chaoshouDumplings.jpg" alt="chaoshouDumplings">
+            <p>Suanla chaoshou is a dish of Szechuan cuisine that consists of a spicy sauce over steamed, meat-filled dumplings. Suanla means "hot and sour," and chaoshou is what these particular large wontons are called in the Chinese province of Sichuan.</p>
+            <h2> Macro Nutrients</h2>
+            <p>402 Cal</p>
+            <p>Carbs: 46g - Fat: 13g - Protein: 21g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="bcModal">
+        <div class="modal-content">
+            <span class="close" id="bcClose">&times;</span>
+            <h1>Bok Choy</h1>
+            <img class="infoPic" src="bokChoy.jpg" alt="bokChoy">
+            <p>Bok choy (American English), pak choi (British English), or pok choi (Brassica rapa subsp. chinensis) is a type of Chinese cabbage. Chinensis varieties do not form heads and have green leaf blades with lighter bulbous bottoms instead, forming
+                a cluster reminiscent of mustard greens.</p>
+            <h2> Macro Nutrients</h2>
+            <p>9 Cal</p>
+            <p>Carbs: 7g - Fat: 1g - Protein: 1g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="cpModal">
+        <div class="modal-content">
+            <span class="close" id="cpClose">&times;</span>
+            <h1>Crab Puff</h1>
+            <img class="infoPic" src="crabPuffs.jpg" alt="crabPuffs">
+            <p>These decadent deep-fried puffs are filled with crabmeat and cream cheese.</p>
+            <h2> Macro Nutrients</h2>
+            <p>67 Cal</p>
+            <p>Carbs: 4g - Fat: 4g - Protein: 2g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="spfwModal">
+        <div class="modal-content">
+            <span class="close" id="spfwClose">&times;</span>
+            <h1>Salt and Pepper Fired Wings</h1>
+            <img class="infoPic" src="saltPepperFriedWings.jpg" alt="saltPepperFriedWings">
+            <p>Wings are fried to a crunchy golden brown and then tossed in a garlic, red chili, white and black pepper mixture, that makes them flavorful and addictive.</p>
+            <h2> Macro Nutrients</h2>
+            <p>190 Cal</p>
+            <p>Carbs: 0g - Fat: 12g - Protein: 19g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="kModal">
+        <div class="modal-content">
+            <span class="close" id="kClose">&times;</span>
+            <h1>Kimchee</h1>
+            <img class="infoPic" src="kimchee.jpg" alt="kimchee">
+            <p>is a spicy Korean side dish created from salted, fermented vegetables, usually cabbage and radishes. It gets its unique kick from a paste made of chili powder, garlic, ginger, red pepper and sugar and its recognizable tang from fish sauce.</p>
+            <h2> Macro Nutrients</h2>
+            <p>10 Cal</p>
+            <p>Carbs: 2g - Fat: 0g - Protein: 0g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="gcModal">
+        <div class="modal-content">
+            <span class="close" id="gcClose">&times;</span>
+            <h1>Garlic Cucumber</h1>
+            <img class="infoPic" src="garlicCucumber.jpg" alt="garlicCucumber">
+            <p>The cucumber is prepared with garlic, sea salt, rice vinegar, soy sauce, sugar, and red pepper flakes</p>
+            <h2> Macro Nutrients</h2>
+            <p>15 Cal</p>
+            <p>Carbs: 4g - Fat: 0g - Protein: 1g</p>
+        </div>
+    </div>
+
+    <!-- divs for all the drink food infomation button 
+    /////////////////////////////////////////////////
+    -->
+    <div class="modal" id="csModal">
+        <div class="modal-content">
+            <span class="close" id="csClose">&times;</span>
+            <h1>Canned Soda</h1>
+            <img class="infoPic" src="cannedSoda.jpg" alt="cannedSoda">
+            <p>Canned Sodas include - Coke, Pepsi, Diet Coke, Mountain Dew, Root Beer, Sprite, Dr. Pepper</p>
+            <h2> Calories </h2>
+            <p> 140 </p>
+        </div>
+    </div>
+
+    <div class="modal" id="cbModal">
+        <div class="modal-content">
+            <span class="close" id="cbClose">&times;</span>
+            <h1>Canned Beer</h1>
+            <img class="infoPic" src="cannedBeer.jpg" alt="cannedBeer">
+            <p>Canned Beers include - AleSmith Speedway Stout, Alchemist Heady Topper, Bell's Hopslam, AleSmith IPA, Ballast Point Sculpin IPA </p>
+            <h2> Calories </h2>
+            <p> 110 </p>
+        </div>
+    </div>
+
+    <div class="modal" id="ddModal">
+        <div class="modal-content">
+            <span class="close" id="ddClose">&times;</span>
+            <h1>Domestic Draft</h1>
+            <img class="infoPic" src="domesticDraft.jpg" alt="domesticDraft">
+            <p>Domestic Drafts include - Bud Light, Coors Light, Miller Lite, Budweiser, Michelob Ultra Light, Natural Light, Busch, Miller High Life</p>
+            <h2> Calories </h2>
+            <p> 100 </p>
+        </div>
+    </div>
+
+    <div class="modal" id="msModal">
+        <div class="modal-content">
+            <span class="close" id="msClose">&times;</span>
+            <h1>Marble Soda</h1>
+            <img class="infoPic" src="marbleSoda.jpg" alt="marbleSoda">
+            <p>Marble Soda Flavors include - Banana, Blueberry, Blue Hawaii, Bubble, Bubble Gum, Candy, Champagne, Cherry, Chili oil, Chocolate, Coconut, Cola, Cotton Candy, Corn Potage, Cream Stew, Curry, Disco Dance, Flaming, Ginseng, Grape, Green Apple,
+                Green Tea, Kimchi, Kiwi, Lemonade,</p>
+            <h2> Calories </h2>
+            <p> 166 </p>
+        </div>
+    </div>
+
+    <div class="modal" id="mexModal">
+        <div class="modal-content">
+            <span class="close" id="mexClose">&times;</span>
+            <h1>Mexican Soda</h1>
+            <img class="infoPic" src="mexicanSoda.jpg" alt="mexicanSoda">
+            <p>Mexican Soda flavors include - Tamarind, Mandarin, Fruit Punch, Jamaica, Lime, Grapefruit, Guava, Pineapple and Strawberry.</p>
+            <h2> Calories </h2>
+            <p> 150 </p>
+        </div>
+    </div>
+
+    <div class="modal" id="itModal">
+        <div class="modal-content">
+            <span class="close" id="itClose">&times;</span>
+            <h1>Iced Tea</h1>
+            <img class="infoPic" src="icedTea.jpeg" alt="icedTea">
+            <p>Enjoy Our Freshly Brewed Iced Tea, Sourced from Rainforest Alliance Certified™ Farms. Our Refreshing, Revitalizing Teas Are Freshly Brewed In Store Each Day</p>
+            <h2> Calories </h2>
+            <p> 91 </p>
+        </div>
+    </div>
+
+    <div class="modal" id="kabModal">
+        <div class="modal-content">
+            <span class="close" id="kabClose">&times;</span>
+            <h1>KoolAid Burst</h1>
+            <img class="infoPic" src="koolAidBursts.jpg" alt="koolAidBursts">
+            <p>KoolAid flavors include - Black Cherry, Lemon Lime, Strawberry, Pink Lemonade, Tropical Punch, Strawberry Kiwi, Cherry & Lemonade</p>
+            <h2> Calories </h2>
+            <p> 98 </p>
+        </div>
+    </div>
+
+    <div class="modal" id="lhModal">
+        <div class="modal-content">
+            <span class="close" id="lhClose">&times;</span>
+            <h1>Little Hugs</h1>
+            <img class="infoPic" src="littleHugs.jpg" alt="littleHugs">
+            <p> Little Hug flavors – Fruit Punch, Blue Raspberry, Kiwi-Strawberry and Grape</p>
+            <h2> Calories </h2>
+            <p> 10 </p>
+        </div>
+    </div>
+
+    <div class="modal" id="wModal">
+        <div class="modal-content">
+            <span class="close" id="wClose">&times;</span>
+            <h1>Water</h1>
+            <img class="infoPic" src="water.jpg" alt="water">
+            <p>Fresh filter water</p>
+            <h2> Calories </h2>
+            <p> 0 </p>
+        </div>
+    </div>
+
+
+    <!-- ////////////////////////////////////////////////////////////// Desserts Modals -->
+    <div class="modal" id="cremeModal">
+        <div class="modal-content">
+            <span class="close" id="cremeClose">&times;</span>
+            <h1>Creme brulee</h1>
+            <img class="infoPic" src="cremebrulee.jpg" alt="cremebrulee">
+            <p>Crème brûlée (/ˌkrɛm bruːˈleɪ/; French pronunciation: ​[kʁɛm bʁy. le]), also known as burnt cream, Trinity cream, or crema catalana, is a dessert consisting of a rich custard base topped with a texturally contrasting layer of hardened caramelized
+                sugar/p>
+                <h2> Macro Nutrients</h2>
+                <p>210 Cal</p>
+                <p>Carbs: 18g - Fat: 10g - Protein: 13g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="etModal">
+        <div class="modal-content">
+            <span class="close" id="etClose">&times;</span>
+            <h1>Egg Tarts</h1>
+            <img class="infoPic" src="eggTarts.jpg" alt="eggTarts">
+            <p>The dish consists of an outer pastry crust filled with egg custard.</p>
+            <h2> Macro Nutrients</h2>
+            <p>140 Cal</p>
+            <p>Carbs: 17g - Fat: 0g - Protein: 2g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="fiModal">
+        <div class="modal-content">
+            <span class="close" id="fiClose">&times;</span>
+            <h1>Fried Ice Cream</h1>
+            <img class="infoPic" src="friedIceCream.jpg" alt="friedIceCream">
+            <p>Fried ice cream is a dessert made from a breaded scoop of ice cream that is quickly deep-fried, creating a warm, crispy shell around the still-cold ice cream.</p>
+            <h2> Macro Nutrients</h2>
+            <p>372 Cal</p>
+            <p>Carbs: 25g - Fat: 29g - Protein: 4g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="fgModal">
+        <div class="modal-content">
+            <span class="close" id="fgClose">&times;</span>
+            <h1>Fruit Gyoza</h1>
+            <img class="infoPic" src="fruitGyoza.jpg" alt="fruitGyoza">
+            <p>These dumplings are fillied with an Asian pear combined with pecan nuts and fresh mint, and they are served with a passion fruit dipping sauce.</p>
+            <h2> Macro Nutrients</h2>
+            <p>210 Cal</p>
+            <p>Carbs: 41g - Fat: 2g - Protein: 5g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="sbModal">
+        <div class="modal-content">
+            <span class="close" id="sbClose">&times;</span>
+            <h1>Sesame Balls</h1>
+            <img class="infoPic" src="sesameBalls.jpg" alt="sesameBalls">
+            <p>Chinese Fried Sesame Balls. This is a traditional and popular Chinese classic dessert, served during Lunar New Year and it that will satisfy your sweet cravings</p>
+            <h2> Macro Nutrients</h2>
+            <p>598 Cal</p>
+            <p>Carbs: 25g - Fat: 48g - Protein: 18g</p>
+        </div>
+    </div>
+
+    <div class="modal" id="smModal">
+        <div class="modal-content">
+            <span class="close" id="smClose">&times;</span>
+            <h1>Sticky Mango Rice</h1>
+            <img class="infoPic" src="stickyMangoRice.jpg" alt="stickyMangoRice">
+            <p> Sticky mango rice is a traditional Thai dessert made with glutinous rice, fresh mango and coconut milk</p>
+            <h2> Macro Nutrients</h2>
+            <p>270 Cal</p>
+            <p>Carbs: 54g - Fat: 4g - Protein: 3g</p>
+        </div>
+    </div>
+</body>
+
+</html>
