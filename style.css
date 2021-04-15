@@ -171,3 +171,22 @@ a:hover{
   width: 55vw;
   height: auto;
 }
+
+.softskills{
+  padding-top: 1vw;
+  display: inline-flex;
+}
+
+.softskill{
+  padding-right: 3vw;
+}
+
+#projects{
+  height: auto;
+}
+
+.project{
+  height:1000px;
+  width: auto;
+  padding-bottom: 10vw;
+}
